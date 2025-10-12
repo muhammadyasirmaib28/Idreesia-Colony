@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon""urdu-idreesia-logo" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
     rel="stylesheet"
@@ -13,318 +12,261 @@
     <link rel="shortcut icon" href="urdu-idreesia-logo.png" type="image/x-icon">
 </head>
 <body>
+
+    <!--header section starts here-->
     <header>
-        <div class="banner">
-            <img src="Idreesia-baners.jpg" alt="">
-            <div class="navbar">
-                <div class="button"><pre>English <i class="ri-arrow-down-s-line"></i></pre></div>
-            </div>
+        <div class="w-full md:h-[200px] h-[80px] object-cover overflow-hidden">
+            <img class="w-full h-full" src="Idreesia-baners.jpg" alt="">
         </div>
     </header>
-
+    <!--header section ends here-->
+    
+    <!--Box section starts here-->
     <section>
-        <div id="flex">
-                <div class="shape" style="transition: all 0.8s ease; animation-duration: 0ms">Latest Message</div>
-                <div class="shape" style="transition: all 0.8s ease; animation-duration: 0ms">Mehfils</div>
-                <div class="shape" style="transition: all 0.8s ease; animation-duration: 0ms">Taleemat</div>
-                <div class="shape" style="transition: all 0.8s ease; animation-duration: 0ms">Naats Shareef</div>
-                <div class="shape" style="transition: all 0.8s ease; animation-duration: 0ms">Wazaif</div>
-                <div class="shape" style="transition: all 0.8s ease; animation-duration: 0ms">Mahafil Address</div>
+        <div class="w-full h-auto flex flex-wrap items-center justify-evenly gap-4 my-[50px] md:my-[70px]">
+                <div class="w-[150px] h-[40px] md:w-[180px] md:h-[50px] bg-white shadow-xl rounded-lg text-sm md:text-lg text-black flex items-center justify-center border-[0.1px] border-gray-300 hover:bg-green-700 hover:text-white cursor-pointer transition-all duration-500 ease-in-out">Latest Message</div>
+                <div class="w-[150px] h-[40px] md:w-[180px] md:h-[50px] bg-white shadow-xl rounded-lg text-sm md:text-lg text-black flex items-center justify-center border-[0.1px] border-gray-300 hover:bg-green-700 hover:text-white cursor-pointer transition-all duration-500 ease-in-out">Mehfils</div>
+                <div class="w-[150px] h-[40px] md:w-[180px] md:h-[50px] bg-white shadow-xl rounded-lg text-sm md:text-lg text-black flex items-center justify-center border-[0.1px] border-gray-300 hover:bg-green-700 hover:text-white cursor-pointer transition-all duration-500 ease-in-out">Taleemat</div>
+                <div class="w-[150px] h-[40px] md:w-[180px] md:h-[50px] bg-white shadow-xl rounded-lg text-sm md:text-lg text-black flex items-center justify-center border-[0.1px] border-gray-300 hover:bg-green-700 hover:text-white cursor-pointer transition-all duration-500 ease-in-out">Naats Shareef</div>
+                <div class="w-[150px] h-[40px] md:w-[180px] md:h-[50px] bg-white shadow-xl rounded-lg text-sm md:text-lg text-black flex items-center justify-center border-[0.1px] border-gray-300 hover:bg-green-700 hover:text-white cursor-pointer transition-all duration-500 ease-in-out">Wazaif</div>
+                <div class="w-[150px] h-[40px] md:w-[180px] md:h-[50px] bg-white shadow-xl rounded-lg text-sm md:text-lg text-black flex items-center justify-center border-[0.1px] border-gray-300 hover:bg-green-700 hover:text-white cursor-pointer transition-all duration-500 ease-in-out">Mahafil Address</div>
         </div>
-        <div class="box">
-            <div id="head">Taleemat</div>
-            <div id="search-bar">
-                <pre><i class="ri-search-line"></i>  search in english to urdu</pre>
-                <div id="button">
-                    Search
+    </section>    
+    <!--box section ends here-->
+
+    <!--main paage starts here-->
+    <section class="w-full h-auto p-4 bg-yellow-50 flex flex-wrap flex-col items-center justify-center gap-4">
+        <!--text-->
+        <div class="text-lg md:text-4xl font-light text-black md:my-[28px]">
+            <h1>Taleemat Karema</h1>
+        </div>
+        <!--search box-->
+        <div class="w-[80%] md:w-[60%] h-auto p-2 bg-white flex items-center justify-between shadow-xl">
+            <pre class="font-light text-slate-700 text-[12px] md:text-sm"><i class="ri-search-2-line"></i> Search in english or urdu</pre>
+            <button class="bg-green-700 rounded-lg px-4 md:py-1 text-white text-sm md:text-xl hover:bg-green-600">Search</button>
+        </div>
+        <!--shapes-->
+        <div class="w-[80%] md:w-[60%] flex flex-wrap items-center justify-center gap-2 md:gap-4 text-sm md:text-lg font-light text-black my-[20px] md:my-[30px]">
+            <div class="px-3 py-1 md:px-5 rounded-lg bg-green-600 text-white cursor-pointer shadow-lg">All Taleemat</div>
+            <div class="px-3 py-1 rounded-lg bg-white cursor-pointer shadow-lg hover:bg-gray-100">Basic Taleemat</div>
+            <div class="px-3 py-1 rounded-lg bg-white cursor-pointer shadow-lg hover:bg-gray-100">Quran Recitations</div>
+            <div class="px-3 py-1 rounded-lg bg-white cursor-pointer shadow-lg hover:bg-gray-100">Dua Mubarak</div>
+            <div class="px-3 py-1 rounded-lg bg-white cursor-pointer shadow-lg hover:bg-gray-100">Azan</div>
+            <div class="px-3 py-1 rounded-lg bg-white cursor-pointer shadow-lg hover:bg-gray-100">New/Daily Taleem</div>
+            <div class="px-3 py-1 rounded-lg bg-white cursor-pointer shadow-lg hover:bg-gray-100">Short Taleemat</div>
+            <div class="px-3 py-1 rounded-lg bg-white cursor-pointer shadow-lg hover:bg-gray-100">Karkunan & Ehad Karkunan Taleemat</div>
+        </div>
+        <!--audio boxes-->
+        <div class="w-[80%] md:w-[60%] flex flex-wrap flex-col items-center justify-center gap-2 md:gap-6 my-[10px]">
+            <!--audio box-1-->
+            <div class="w-full h-auto md:p-4 p-2 flex gap-2 md:gap-4 items-center bg-white shadow-xl rounded-lg cursor-pointer">
+                <div class=" ml-[10px] text-lg md:text-[40px]">
+                    <p><i class="ri-movie-line"></i></p>
+                </div>
+                <div class="text-[12px] md:text-xl">
+                    <p>25-March-2011 Mehfil Part-1</p>
+                    <p class="font-light text-slate-700 md:mt-[10px]">VM-0036 - New/Daily Taleem</p>
                 </div>
             </div>
-            <div class="box-flex">
-                <div id="green" class="shapes">All Taleemat</div>
-                <div class="shapes">Basic Taleemat</div>
-                <div class="shapes">Quran Recitations</div>
-                <div class="shapes">Dua Mubarak</div>
-                <div class="shapes">Azan</div>
-            </div>
-            <div class="box-flex">
-                <div id="margin" class="shapes">New Daily/Taleem</div>
-                <div class="shapes">Short Taleemat</div>
-            </div>
-            <div class="boxes">
-                <div class="icon">
-                    <i class="ri-play-circle-line"></i>
+
+            <!--audio box-2-->
+            <div class="w-full h-auto md:p-4 p-2 flex gap-2 md:gap-4 items-center bg-white shadow-xl rounded-lg cursor-pointer">
+                <div class=" ml-[10px] text-lg md:text-[40px]">
+                    <p><i class="ri-movie-line"></i></p>
                 </div>
-                <div class="text">
-                    <p>20-Oct-2010-Zohar-12-Dhul-Qad-1431-Imortant-Zaruri-TS-Mehfil-Part-1.</p>
-                    <h6>VM-0590- New/Daily Taleem</h6>
+                <div class="text-[12px] md:text-xl">
+                    <p>25-March-2011 Mehfil Part-1</p>
+                    <p class="font-light text-slate-700 md:mt-[10px]">VM-0036 - New/Daily Taleem</p>
                 </div>
             </div>
-            <div class="boxes">
-                <div class="icon">
-                    <i class="ri-play-circle-line"></i>
+            
+            <!--audio box-3-->
+            <div class="w-full h-auto md:p-4 p-2 flex gap-2 md:gap-4 items-center bg-white shadow-xl rounded-lg cursor-pointer">
+                <div class=" ml-[10px] text-lg md:text-[40px]">
+                    <p><i class="ri-movie-line"></i></p>
                 </div>
-                <div class="text">
-                    <p>20-Oct-2010-Zohar-12-Dhul-Qad-1431-Imortant-Zaruri-TS-Mehfil-Part-1.</p>
-                    <h6>VM-0590- New/Daily Taleem</h6>
-                </div>
-            </div>
-            <div class="boxes">
-                <div class="icon">
-                    <i class="ri-play-circle-line"></i>
-                </div>
-                <div class="text">
-                    <p>20-Oct-2010-Zohar-12-Dhul-Qad-1431-Imortant-Zaruri-TS-Mehfil-Part-1.</p>
-                    <h6>VM-0590- New/Daily Taleem</h6>
+                <div class="text-[12px] md:text-xl">
+                    <p>25-March-2011 Mehfil Part-1</p>
+                    <p class="font-light text-slate-700 md:mt-[10px]">VM-0036 - New/Daily Taleem</p>
                 </div>
             </div>
-            <div class="boxes">
-                <div class="icon">
-                    <i class="ri-play-circle-line"></i>
+
+            <!--audio box-4-->
+            <div class="w-full h-auto md:p-4 p-2 flex gap-2 md:gap-4 items-center bg-white shadow-xl rounded-lg cursor-pointer">
+                <div class=" ml-[10px] text-lg md:text-[40px]">
+                    <p><i class="ri-movie-line"></i></p>
                 </div>
-                <div class="text">
-                    <p>20-Oct-2010-Zohar-12-Dhul-Qad-1431-Imortant-Zaruri-TS-Mehfil-Part-1.</p>
-                    <h6>VM-0590- New/Daily Taleem</h6>
-                </div>
-            </div>
-            <div class="boxes">
-                <div class="icon">
-                    <i class="ri-play-circle-line"></i>
-                </div>
-                <div class="text">
-                    <p>20-Oct-2010-Zohar-12-Dhul-Qad-1431-Imortant-Zaruri-TS-Mehfil-Part-1.</p>
-                    <h6>VM-0590- New/Daily Taleem</h6>
+                <div class="text-[12px] md:text-xl">
+                    <p>25-March-2011 Mehfil Part-1</p>
+                    <p class="font-light text-slate-700 md:mt-[10px]">VM-0036 - New/Daily Taleem</p>
                 </div>
             </div>
-            <div class="boxes">
-                <div class="icon">
-                    <i class="ri-play-circle-line"></i>
+
+            <!--audio box-5-->
+            <div class="w-full h-auto md:p-4 p-2 flex gap-2 md:gap-4 items-center bg-white shadow-xl rounded-lg cursor-pointer">
+                <div class=" ml-[10px] text-lg md:text-[40px]">
+                    <p><i class="ri-movie-line"></i></p>
                 </div>
-                <div class="text">
-                    <p>20-Oct-2010-Zohar-12-Dhul-Qad-1431-Imortant-Zaruri-TS-Mehfil-Part-1.</p>
-                    <h6>VM-0590- New/Daily Taleem</h6>
-                </div>
-            </div>
-            <div class="boxes">
-                <div class="icon">
-                    <i class="ri-play-circle-line"></i>
-                </div>
-                <div class="text">
-                    <p>20-Oct-2010-Zohar-12-Dhul-Qad-1431-Imortant-Zaruri-TS-Mehfil-Part-1.</p>
-                    <h6>VM-0590- New/Daily Taleem</h6>
+                <div class="text-[12px] md:text-xl">
+                    <p>25-March-2011 Mehfil Part-1</p>
+                    <p class="font-light text-slate-700 md:mt-[10px]">VM-0036 - New/Daily Taleem</p>
                 </div>
             </div>
-            <div class="boxes">
-                <div class="icon">
-                    <i class="ri-play-circle-line"></i>
+
+            <!--audio box-6-->
+            <div class="w-full h-auto md:p-4 p-2 flex gap-2 md:gap-4 items-center bg-white shadow-xl rounded-lg cursor-pointer">
+                <div class=" ml-[10px] text-lg md:text-[40px]">
+                    <p><i class="ri-movie-line"></i></p>
                 </div>
-                <div class="text">
-                    <p>20-Oct-2010-Zohar-12-Dhul-Qad-1431-Imortant-Zaruri-TS-Mehfil-Part-1.</p>
-                    <h6>VM-0590- New/Daily Taleem</h6>
-                </div>
-            </div>
-            <div class="boxes">
-                <div class="icon">
-                    <i class="ri-play-circle-line"></i>
-                </div>
-                <div class="text">
-                    <p>20-Oct-2010-Zohar-12-Dhul-Qad-1431-Imortant-Zaruri-TS-Mehfil-Part-1.</p>
-                    <h6>VM-0590- New/Daily Taleem</h6>
+                <div class="text-[12px] md:text-xl">
+                    <p>25-March-2011 Mehfil Part-1</p>
+                    <p class="font-light text-slate-700 md:mt-[10px]">VM-0036 - New/Daily Taleem</p>
                 </div>
             </div>
-            <div class="boxes">
-                <div class="icon">
-                    <i class="ri-play-circle-line"></i>
+
+            <!--audio box-7-->
+            <div class="w-full h-auto md:p-4 p-2 flex gap-2 md:gap-4 items-center bg-white shadow-xl rounded-lg cursor-pointer">
+                <div class=" ml-[10px] text-lg md:text-[40px]">
+                    <p><i class="ri-movie-line"></i></p>
                 </div>
-                <div class="text">
-                    <p>20-Oct-2010-Zohar-12-Dhul-Qad-1431-Imortant-Zaruri-TS-Mehfil-Part-1.</p>
-                    <h6>VM-0590- New/Daily Taleem</h6>
-                </div>
-            </div>
-            <div class="boxes">
-                <div class="icon">
-                    <i class="ri-play-circle-line"></i>
-                </div>
-                <div class="text">
-                    <p>20-Oct-2010-Zohar-12-Dhul-Qad-1431-Imortant-Zaruri-TS-Mehfil-Part-1.</p>
-                    <h6>VM-0590- New/Daily Taleem</h6>
+                <div class="text-[12px] md:text-xl">
+                    <p>25-March-2011 Mehfil Part-1</p>
+                    <p class="font-light text-slate-700 md:mt-[10px]">VM-0036 - New/Daily Taleem</p>
                 </div>
             </div>
-            <div class="boxes">
-                <div class="icon">
-                    <i class="ri-play-circle-line"></i>
+
+            <!--audio box-8-->
+            <div class="w-full h-auto md:p-4 p-2 flex gap-2 md:gap-4 items-center bg-white shadow-xl rounded-lg cursor-pointer">
+                <div class=" ml-[10px] text-lg md:text-[40px]">
+                    <p><i class="ri-movie-line"></i></p>
                 </div>
-                <div class="text">
-                    <p>20-Oct-2010-Zohar-12-Dhul-Qad-1431-Imortant-Zaruri-TS-Mehfil-Part-1.</p>
-                    <h6>VM-0590- New/Daily Taleem</h6>
-                </div>
-            </div>
-            <div class="boxes">
-                <div class="icon">
-                    <i class="ri-play-circle-line"></i>
-                </div>
-                <div class="text">
-                    <p>20-Oct-2010-Zohar-12-Dhul-Qad-1431-Imortant-Zaruri-TS-Mehfil-Part-1.</p>
-                    <h6>VM-0590- New/Daily Taleem</h6>
+                <div class="text-[12px] md:text-xl">
+                    <p>25-March-2011 Mehfil Part-1</p>
+                    <p class="font-light text-slate-700 md:mt-[10px]">VM-0036 - New/Daily Taleem</p>
                 </div>
             </div>
-            <div class="boxes">
-                <div class="icon">
-                    <i class="ri-play-circle-line"></i>
+
+            <!--audio box-9-->
+            <div class="w-full h-auto md:p-4 p-2 flex gap-2 md:gap-4 items-center bg-white shadow-xl rounded-lg cursor-pointer">
+                <div class=" ml-[10px] text-lg md:text-[40px]">
+                    <p><i class="ri-movie-line"></i></p>
                 </div>
-                <div class="text">
-                    <p>20-Oct-2010-Zohar-12-Dhul-Qad-1431-Imortant-Zaruri-TS-Mehfil-Part-1.</p>
-                    <h6>VM-0590- New/Daily Taleem</h6>
-                </div>
-            </div>
-            <div class="boxes">
-                <div class="icon">
-                    <i class="ri-play-circle-line"></i>
-                </div>
-                <div class="text">
-                    <p>20-Oct-2010-Zohar-12-Dhul-Qad-1431-Imortant-Zaruri-TS-Mehfil-Part-1.</p>
-                    <h6>VM-0590- New/Daily Taleem</h6>
+                <div class="text-[12px] md:text-xl">
+                    <p>25-March-2011 Mehfil Part-1</p>
+                    <p class="font-light text-slate-700 md:mt-[10px]">VM-0036 - New/Daily Taleem</p>
                 </div>
             </div>
-            <div class="boxes">
-                <div class="icon">
-                    <i class="ri-play-circle-line"></i>
+
+            <!--audio box-10-->
+            <div class="w-full h-auto md:p-4 p-2 flex gap-2 md:gap-4 items-center bg-white shadow-xl rounded-lg cursor-pointer">
+                <div class=" ml-[10px] text-lg md:text-[40px]">
+                    <p><i class="ri-movie-line"></i></p>
                 </div>
-                <div class="text">
-                    <p>20-Oct-2010-Zohar-12-Dhul-Qad-1431-Imortant-Zaruri-TS-Mehfil-Part-1.</p>
-                    <h6>VM-0590- New/Daily Taleem</h6>
-                </div>
-            </div>
-            <div class="boxes">
-                <div class="icon">
-                    <i class="ri-play-circle-line"></i>
-                </div>
-                <div class="text">
-                    <p>20-Oct-2010-Zohar-12-Dhul-Qad-1431-Imortant-Zaruri-TS-Mehfil-Part-1.</p>
-                    <h6>VM-0590- New/Daily Taleem</h6>
+                <div class="text-[12px] md:text-xl">
+                    <p>25-March-2011 Mehfil Part-1</p>
+                    <p class="font-light text-slate-700 md:mt-[10px]">VM-0036 - New/Daily Taleem</p>
                 </div>
             </div>
-            <div class="boxes">
-                <div class="icon">
-                    <i class="ri-play-circle-line"></i>
-                </div>
-                <div class="text">
-                    <p>20-Oct-2010-Zohar-12-Dhul-Qad-1431-Imortant-Zaruri-TS-Mehfil-Part-1.</p>
-                    <h6>VM-0590- New/Daily Taleem</h6>
-                </div>
+
+        </div>
+        <!--last part-->
+        <div class="w-[80%] md:w-[60%] flex flex-row flex-wrap items-center justify-between gap-6 md:my-[50px]">
+            <div class="text-[10px] md:text-sm md:font-medium text-slate-600 font-light">Showing 1 to 20 of 2054 results</div>
+            <div class="w-[100px] h-[35px] bg-white rounded-lg shadow-lg flex items-center justify-around text-slate-700 text-lg md:hidden flex">
+                <p><i class="ri-arrow-drop-left-line"></i></p>
+                <p><i class="ri-arrow-drop-right-line"></i></p>
             </div>
-            <div class="boxes">
-                <div class="icon">
-                    <i class="ri-play-circle-line"></i>
-                </div>
-                <div class="text">
-                    <p>20-Oct-2010-Zohar-12-Dhul-Qad-1431-Imortant-Zaruri-TS-Mehfil-Part-1.</p>
-                    <h6>VM-0590- New/Daily Taleem</h6>
-                </div>
+            <!--copy-->
+            <div class="bg-white rounded-lg shadow-lg flex flex-row items-center justify-around text-slate-700 font-medium text-[12px] gap-1 md:flex hidden">
+                <p><i class="ri-arrow-drop-left-line"></i></p>
+                <div class="text-black">1</div>
+                <div class="hover:bg-gray-100 hover:text-black px-2 py-1 rounded-lg text-slate-400 cursor-default">2</div>
+                <div class="hover:bg-gray-100 hover:text-black px-2 py-1 rounded-lg text-slate-400 cursor-default">3</div>
+                <div class="hover:bg-gray-100 hover:text-black px-2 py-1 rounded-lg text-slate-400 cursor-default">4</div>
+                <div class="hover:bg-gray-100 hover:text-black px-2 py-1 rounded-lg text-slate-400 cursor-default">5</div>
+                <div class="hover:bg-gray-100 hover:text-black px-2 py-1 rounded-lg text-slate-400 cursor-default">6</div>
+                <div class="hover:bg-gray-100 hover:text-black px-2 py-1 rounded-lg text-slate-400 cursor-default">7</div>
+                <div class="hover:bg-gray-100 hover:text-black px-2 py-1 rounded-lg text-slate-400 cursor-default">8</div>
+                <div class="hover:bg-gray-100 hover:text-black px-2 py-1 rounded-lg text-slate-400 cursor-default">9</div>
+                <div class="hover:bg-gray-100 hover:text-black px-2 py-1 rounded-lg text-slate-400 cursor-default">...</div>
+                <div class="hover:bg-gray-100 hover:text-black px-2 py-1 rounded-lg text-slate-400 cursor-default">102</div>
+                <div class="hover:bg-gray-100 hover:text-black px-2 py-1 rounded-lg text-slate-400 cursor-default">103</div>
+                <p class="hover:bg-gray-100 hover:text-black px-2 py-1 rounded-lg cursor-default"><i class="ri-arrow-drop-right-line"></i></p>
             </div>
-            <div class="boxes">
-                <div class="icon">
-                    <i class="ri-play-circle-line"></i>
-                </div>
-                <div class="text">
-                    <p>20-Oct-2010-Zohar-12-Dhul-Qad-1431-Imortant-Zaruri-TS-Mehfil-Part-1.</p>
-                    <h6>VM-0590- New/Daily Taleem</h6>
-                </div>
-            </div>
-            <div class="boxes">
-                <div class="icon">
-                    <i class="ri-play-circle-line"></i>
-                </div>
-                <div class="text">
-                    <p>20-Oct-2010-Zohar-12-Dhul-Qad-1431-Imortant-Zaruri-TS-Mehfil-Part-1.</p>
-                    <h6>VM-0590- New/Daily Taleem</h6>
-                </div>
-            </div>
-            <div class="boxes">
-                <div class="icon">
-                    <i class="ri-play-circle-line"></i>
-                </div>
-                <div class="text">
-                    <p>20-Oct-2010-Zohar-12-Dhul-Qad-1431-Imortant-Zaruri-TS-Mehfil-Part-1.</p>
-                    <h6>VM-0590- New/Daily Taleem</h6>
-                </div>
-            </div>
-            <div id="graph">
-                <p>Showing 01 to 20 of 1895 results</p>
-                <div class="l-s">
-                    <i class="ri-arrow-left-s-line"></i> 
-                    <div class="bx"><span>1</span></div>
-                    <div class="bx">2</div>
-                    <div class="bx">3</div>
-                    <div class="bx">4</div>
-                    <div class="bx">5</div>
-                    <div class="bx">6</div>
-                    <div class="bx">7</div>
-                    <div class="bx">8</div>
-                    <div class="bx">9</div>
-                    <div class="bx">10</div>
-                    <div class="bx">...</div>
-                    <div class="bx">94</div>
-                    <div class="bx">95</div>
-                    <i class="ri-arrow-right-s-line"></i>
-                </div>
-            </div>
-            <hr>
-                <div class="last-box">
-                    <div id="cards">
-                        <div id="L-M" class="last-shapes">
-                            <img src="https://www.idreesia.com/images/calligraphy/allah-allah-white.png" alt="">
-                        </div>
-                        <div id="blue" class="last-shapes">
-                            <img src="https://www.idreesia.com/images/calligraphy/lailah-white.png" alt="">
-                        </div>
-                        <div id="yellow" class="last-shapes">
-                            <img src="https://www.idreesia.com/images/calligraphy/durood-white.png" alt="">
-                        </div>
-                        <div id="orange" class="last-shapes">
-                            <img src="https://www.idreesia.com/images/calligraphy/astaghfirullah-white.png" alt="">
-                        </div>
-                    </div>
-                    <div id="d-f">
-                        <div id="c-m" class="card">Mehfils</div>
-                        <div id="c-y" class="card">Taleemat</div>
-                        <div id="c-b" class="card">Naat Shareef</div>
-                        <div id="c-o" class="card">Wazaif</div>
-                    </div>
-                </div>
-                <div class="footer">
-                    <div id="footer-flex">
-                        <div class="logo">
-                            <img src="urdu-idreesia-logo.png" alt="">
-                        </div>
-                        <div class="contact">
-                            <h2>Contact</h2>
-                            <p>061-111-111-381</p>
-                            <p>381-A Block Shah Rukn-e-</p>
-                            <p>Alam Colony, Near thana</p>
-                            <p>stop, Multan, Pakistan</p>
-                        </div>
-                        <div class="about">
-                            <h2>Learn More</h2>
-                            <p>About</p>
-                            <p>Contact</p>
-                            <p>Gallery</p>
-                        </div>
-                        <div class="links">
-                            <div id="m-t" class="link">
-                                <img src="https://www.idreesia.com/images/logo/play-store.png" alt="">
-                            </div>
-                            <div class="link">
-                                <img src="https://www.idreesia.com/images/logo/youtube.png" alt="">
-                            </div>
-                            <div class="link">
-                                <img src="https://www.idreesia.com/images/logo/whatsapp.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="copyright">
-                        &copy; 2025 Silsila Muhammadia Ameenia Idreesia All Rights Reserved
-                    </div>
-                </div>
+        </div>
     </section>
+    <!--main page ends here-->
+
+    <!--cards section starts here-->
+    <section class="w-full h-auto p-2 md:p-10 my-[50px] flex flex-wrap items-center justify-center gap-6 md:gap-16">
+        <!--card one-->
+        <div class="flex flex-wrap flex-col gap-2 md:gap-6 items-center justify-center transition-transform duration-500 ease-in-out hover:scale-110">
+            <div class="w-[120px] h-[120px] md:w-[180px] md:h-[180px] rounded-lg bg-green-700 object-cover overflow-hidden cursor-pointer">
+                <img class="w-full h-full" src="https://www.idreesia.com/images/calligraphy/allah-allah-white.png" alt="">
+            </div>
+            <div class="w-[120px] md:w-[180px] py-1 text-center border-[1px] border-green-600 rounded-2xl text-slate-700 font-light md:font-medium cursor-pointer hover:text-green-600 hover:border-green-500">Mehfils</div>
+        </div>
+
+        <!--card two-->
+        <div class="flex flex-wrap flex-col gap-2 md:gap-6 items-center justify-center transition-transform duration-500 ease-in-out hover:scale-110">
+            <div class="w-[120px] h-[120px] md:w-[180px] md:h-[180px] rounded-lg bg-slate-700 object-cover overflow-hidden cursor-pointer">
+                <img class="w-full h-full" src="https://www.idreesia.com/images/calligraphy/lailah-white.png" alt="">
+            </div>
+            <div class="w-[120px] md:w-[180px] py-1 text-center border-[1px] border-slate-400 rounded-2xl text-slate-700 font-light md:font-medium cursor-pointer hover:text-slate-700 hover:border-slate-700">Mehfils</div>
+        </div>
+
+        <!--card three-->
+        <div class="flex flex-wrap flex-col gap-2 md:gap-6 items-center justify-center transition-transform duration-500 ease-in-out hover:scale-110">
+            <div class="w-[120px] h-[120px] md:w-[180px] md:h-[180px] rounded-lg bg-yellow-400 object-cover overflow-hidden cursor-pointer">
+                <img class="w-full h-full" src="https://www.idreesia.com/images/calligraphy/durood-white.png" alt="">
+            </div>
+            <div class="w-[120px] md:w-[180px] py-1 text-center border-[1px] border-yellow-400 rounded-2xl text-slate-700 font-light md:font-medium cursor-pointer hover:text-yellow-400 hover:border-yellow-400">Mehfils</div>
+        </div>
+
+        <!--card four-->
+        <div class="flex flex-wrap flex-col gap-2 md:gap-6 items-center justify-center transition-transform duration-500 ease-in-out hover:scale-110">
+            <div class="w-[120px] h-[120px] md:w-[180px] md:h-[180px] rounded-lg bg-orange-400 object-cover overflow-hidden cursor-pointer">
+                <img class="w-full h-full" src="https://www.idreesia.com/images/calligraphy/astaghfirullah-white.png" alt="">
+            </div>
+            <div class="w-[120px] md:w-[180px] py-1 text-center border-[1px] border-orange-400 rounded-2xl text-slate-700 font-light md:font-medium cursor-pointer hover:text-orange-400 hover:border-orange-400">Mehfils</div>
+        </div>
+    </section>
+
+    <!--footer section starts here-->
+    <footer class="w-full h-auto md:p-8 flex flex-col items-center justify-center bg-gray-200">
+        <!--flex box-->
+        <div class="flex md:flex-row flex-col items-center justify-center flex-wrap md:gap-16 gap-8 md:mb-[50px] mb-[20px] mt-[40px] md:mt-0">
+            <!--logo-->
+            <div class="md:w-[160px] md:h-[160px] w-[100px] h-[100px] object-cover overflow-hidden">
+                <img class="w-full h-full" src="urdu-idreesia-logo.png" alt="">
+            </div>
+            <!--contact-->
+            <div class="flex flex-col flex-wrap text-slate-700 md:gap-4 md:p-4 gap-2 text-center">
+                <h1 class="md:text-3xl text-lg font-medium">Contact</h1>
+                <p class="md:text-lg text-sm hover:text-green-600 cursor-pointer">061-111-111-381</p>
+                <p class="md:text-lg text-sm hover:text-green-600 cursor-pointer md:w-[300px] w-[180px]">381-A Block Shah Rukn-e-Alam Colony, Near Thana Stop, Multan, Pakistan</p>
+            </div>
+            <!--learn-->
+            <div class="flex flex-col flex-wrap text-slate-700 md:gap-4 md:p-4 gap-2 text-center">
+                <h1 class="md:text-3xl text-lg font-medium">Learn More</h1>
+                <p class="md:text-lg text-sm hover:text-green-600 cursor-pointer">About</p>
+                <p class="md:text-lg text-sm hover:text-green-600 cursor-pointer">Contact</p>
+                <p class="md:text-lg text-sm hover:text-green-600 cursor-pointer">Gallery</p>
+            </div>
+            <!--social account-->
+            <div class="flex flex-col flex-wrap md:gap-4 gap-2">
+                <p class="md:w-[130px] md:h-[40px] w-[90px] h-[25px] object-cover overflow-hidden cursor-pointer"><img class="w-full h-full" src="https://www.idreesia.com/images/logo/app-store.svg" alt=""></p>
+                <p class="md:w-[130px] md:h-[40px] w-[90px] h-[25px] object-cover overflow-hidden cursor-pointer"><img class="w-full h-full" src="https://www.idreesia.com/images/logo/play-store.png" alt=""></p>
+                <p class="md:w-[130px] md:h-[40px] w-[90px] h-[25px] object-cover overflow-hidden cursor-pointer"><img class="w-full h-full" src="https://www.idreesia.com/images/logo/youtube.png" alt=""></p>
+                <p class="md:w-[130px] md:h-[40px] w-[90px] h-[25px] object-cover overflow-hidden cursor-pointer"><img class="w-full h-full" src="https://www.idreesia.com/images/logo/whatsapp.png" alt=""></p>
+            </div>
+        </div>
+        <!--last section-->
+        <div class="w-[60%] h-[1px] bg-white md:mb-[40px] mb-[12px]"></div>
+        <div class="md:text-xl text-[12px] text-slate-700">
+            <div class="mb-[10px] md:mb-0">© 2025 Silsila Muhammadia Ameenia Idreesia All Rights Reserved.</div>
+        </div>
+    </footer>
+    <!--footer section ends here-->            
 </body>
 </html>
